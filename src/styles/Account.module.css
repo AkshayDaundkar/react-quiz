@@ -6,6 +6,11 @@
   align-items: center;
   margin-right: 30px;
   font-size: 12px;
+  color: #fff;
+}
+.name {
+  font-weight: 400;
+  color: rgb(97, 218, 251);
 }
 
 .account > span:last-child {

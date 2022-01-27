@@ -11,7 +11,7 @@ function Summary() {
         </p>
       </div>
 
-      <div class={classes.badge}>
+      <div className={classes.badge}>
         <img src={image} alt="Success" />
       </div>
     </div>

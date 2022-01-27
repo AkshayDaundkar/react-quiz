@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --bodyBackground: #f2f4f8;
+  /* --bodyBackground: #f2f4f8; */
+  --bodyBackground: rgb(255, 255, 255);
   --successGreen: #00ff84;
   --dangerRed: #ffc0c7;
   --questionBG: #e4e8ee;
@@ -58,5 +59,64 @@ h4 {
 @media only screen and (max-width: 1023px) {
   .column {
     grid-template-columns: 1fr;
+  }
+}
+
+.infinite-scroll-component {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  row-gap: 20px;
+  overflow: hidden;
+}
+
+.material-icons-outlined {
+  color: #fff;
+}
+
+.titlebg {
+  z-index: 1;
+  text-align: center;
+  width: 120% !important;
+  height: 400px !important;
+  margin-top: -4rem;
+  margin-left: -10%;
+  padding-right: 5%;
+  background-size: cover;
+  background-image: url("../assets/images/bg.png");
+}
+.titlebgt {
+  padding-top: 8%;
+  font-size: 50px;
+  color: rgb(97, 218, 251);
+}
+.titlebgtt {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 3%;
+  font-weight: 200;
+  color: #fff;
+}
+.titlebgttt {
+  background-color: rgb(97, 218, 251);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .infinite-scroll-component {
+    width: 90%;
   }
 }

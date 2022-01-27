@@ -3,12 +3,12 @@ import classes from "../styles/Button.module.css";
 
 function Button({ className, children }) {
   return (
-    <div
+    <button
       className={`${classes.button}
       ${className}`}
     >
       {children}
-    </div>
+    </button>
   );
 }
 
