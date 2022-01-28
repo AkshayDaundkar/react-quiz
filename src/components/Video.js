@@ -7,8 +7,8 @@ function Video({ title, id, noq }) {
       <img src={`https://gdurl.com/${id}/`} alt={title} />
 
       {/* <img src={`https://gifyu.com/image/${id}`} alt={title} /> */}
-      <p>{title}</p>
-      <div className={classes.qmeta}>
+      <p style={{ marginTop: "5%" }}>{title}</p>
+      <div className={classes.qmeta} style={{ marginTop: "5%" }}>
         <p>{noq} Questions</p>
         <p>
           <span className={classes.pscore}>Total Score : {noq * 5}</span>

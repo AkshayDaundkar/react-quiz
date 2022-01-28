@@ -12,6 +12,7 @@ function Videos() {
     <div>
       {videos.length > 0 && (
         <InfiniteScroll
+          style={{ overflowY: "hidden" }}
           dataLength={videos.length}
           hasMore={hasMore}
           loader="Loading..."

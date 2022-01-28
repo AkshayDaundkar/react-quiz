@@ -6,7 +6,13 @@ function Question({ answers = [] }) {
   return answers.map((answer, index) => (
     <div className={classes.question} key={index}>
       <div className={classes.qtitle}>
-        <span className="material-icons-outlined"> help_outline </span>
+        <span
+          className="material-icons-outlined"
+          style={{ color: "rgb(97, 218, 251)" }}
+        >
+          {" "}
+          help_outline{" "}
+        </span>
         {answer.title}
       </div>
       <Answers input={false} options={answer.options} />

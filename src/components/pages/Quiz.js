@@ -5,7 +5,6 @@ import { useHistory, useParams } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import useQuestions from "../../hooks/useQuestions";
 import Answers from "../Answers";
-import MiniPlayer from "../MiniPlayer";
 import ProgressBar from "../ProgressBar";
 
 const initialState = null;
@@ -94,7 +93,9 @@ function Quiz() {
   return (
     <>
       {loading && <div>Loading...</div>}
-      {error && <div>There was a error!...</div>}
+      {error && (
+        <div>There was a error Please Log in to access the Content!...</div>
+      )}
       {!loading && !error && qna && qna.length > 0 && (
         <>
           <h1>{qna[currentQuestion].title}</h1>
@@ -110,7 +111,6 @@ function Quiz() {
             submit={submit}
             progress={percentage}
           />
-          <MiniPlayer />
         </>
       )}
     </>

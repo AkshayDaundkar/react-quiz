@@ -86,7 +86,7 @@ h4 {
   margin-left: -10%;
   padding-right: 5%;
   background-size: cover;
-  background-image: url("../assets/images/bg.png");
+  background-image: url("../assets/images/bg2.png");
 }
 .titlebgt {
   padding-top: 8%;
@@ -118,5 +118,14 @@ h4 {
 @media only screen and (max-width: 600px) {
   .infinite-scroll-component {
     width: 90%;
+  }
+  .titlebg {
+    background-image: url("../assets/images/bg.png");
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .titlebg {
+    background-image: url("../assets/images/bg.png");
   }
 }

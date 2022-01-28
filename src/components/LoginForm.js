@@ -31,7 +31,7 @@ export default function LoginForm() {
   }
 
   return (
-    <Form style={{ height: "330px" }} onSubmit={handleSubmit}>
+    <Form style={{ height: "330px", marginTop: "10%" }} onSubmit={handleSubmit}>
       <TextInput
         type="text"
         placeholder="Enter email"
