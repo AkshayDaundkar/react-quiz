@@ -1,5 +1,5 @@
 .button {
-  background: var(--successGreen);
+  background: rgb(97, 218, 251);
   color: var(--fontPrimary);
   padding: 0.6rem 1.2rem;
   font-weight: 600;

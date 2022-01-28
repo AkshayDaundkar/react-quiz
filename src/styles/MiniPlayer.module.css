@@ -71,7 +71,7 @@
   right: 10px;
   overflow: hidden;
   border-radius: 50px;
-  background-color: var(--fontPrimary);
+  background-color: rgb(97, 218, 251);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,11 +81,11 @@
 }
 
 .floatingBtn:hover {
-  background-color: var(--successGreen);
+  background-color: #000;
 }
 
 .floatingBtn:hover span {
-  color: var(--fontPrimary);
+  color: rgb(97, 218, 251);
 }
 
 .floatingBtn p {
@@ -98,7 +98,7 @@
 }
 
 .floatingBtn span {
-  color: var(--successGreen);
+  color: #000;
   font-weight: 500;
 }
 
